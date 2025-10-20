@@ -1,0 +1,492 @@
+ubuntu@ubuntu:~$ sudo su
+root@ubuntu:/home/ubuntu# git
+Command 'git' not found, but can be installed with:
+apt install git
+root@ubuntu:/home/ubuntu# apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4,804 kB of archives.
+After this operation, 24.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 liberror-perl all 0.17029-2 [25.6 kB]
+Ign:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2
+Ign:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.2
+Err:3 http://security.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.2
+  404  Not Found [IP: 185.125.190.83 80]
+Ign:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2
+Ign:2 http://security.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2
+Err:2 http://security.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2
+  404  Not Found [IP: 185.125.190.83 80]
+Fetched 25.6 kB in 3s (8,423 B/s)
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/git/git-man_2.43.0-1ubuntu7.2_all.deb  404  Not Found [IP: 185.125.190.83 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.2_amd64.deb  404  Not Found [IP: 185.125.190.83 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+root@ubuntu:/home/ubuntu# apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4,779 kB/4,804 kB of archives.
+After this operation, 24.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Ign:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2
+Ign:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.2
+Ign:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2
+Err:2 http://security.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.2
+  404  Not Found [IP: 185.125.190.39 80]
+Ign:1 http://security.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2
+Err:1 http://security.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.2
+  404  Not Found [IP: 185.125.190.39 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/git/git-man_2.43.0-1ubuntu7.2_all.deb  404  Not Found [IP: 185.125.190.39 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/git/git_2.43.0-1ubuntu7.2_amd64.deb  404  Not Found [IP: 185.125.190.39 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+root@ubuntu:/home/ubuntu# sudo apt update
+Ign:1 cdrom://Ubuntu 24.04.2 LTS _Noble Numbat_ - Release amd64 (20250215) noble InRelease
+Hit:2 cdrom://Ubuntu 24.04.2 LTS _Noble Numbat_ - Release amd64 (20250215) noble Release
+Hit:3 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,498 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main i386 Packages [339 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1,222 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main i386 Packages [537 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [288 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main Icons (48x48) [36.0 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main Icons (64x64) [51.0 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [15.3 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/universe i386 Packages [988 kB]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [204 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Get:20 http://security.ubuntu.com/ubuntu noble-security/main Icons (48x48) [13.4 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1,496 kB]
+Get:22 http://security.ubuntu.com/ubuntu noble-security/main Icons (64x64) [20.0 kB]
+Get:23 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [8,968 B]
+Get:24 http://security.ubuntu.com/ubuntu noble-security/universe i386 Packages [552 kB]
+Get:25 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [892 kB]
+Get:26 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [197 kB]
+Get:27 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.3 kB]
+Get:28 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [18.3 kB]
+Get:29 http://security.ubuntu.com/ubuntu noble-security/restricted i386 Packages [20.5 kB]
+Get:30 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1,978 kB]
+Get:31 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [450 kB]
+Get:32 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:33 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [520 B]
+Get:34 http://security.ubuntu.com/ubuntu noble-security/multiverse i386 Packages [6,072 B]
+Get:35 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [28.0 kB]
+Get:36 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [5,844 B]
+Get:37 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:38 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [384 B]
+Get:39 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [301 kB]
+Get:40 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [378 kB]
+Get:41 http://archive.ubuntu.com/ubuntu noble-updates/universe Icons (48x48) [232 kB]
+Get:42 http://archive.ubuntu.com/ubuntu noble-updates/universe Icons (64x64) [363 kB]
+Get:43 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [31.3 kB]
+Get:44 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2,090 kB]
+Get:45 http://archive.ubuntu.com/ubuntu noble-updates/restricted i386 Packages [24.2 kB]
+Get:46 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [470 kB]
+Get:47 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:48 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [516 B]
+Get:49 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [30.3 kB]
+Get:50 http://archive.ubuntu.com/ubuntu noble-updates/multiverse i386 Packages [7,236 B]
+Get:51 http://archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [5,564 B]
+Get:52 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:53 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [484 B]
+Get:54 http://archive.ubuntu.com/ubuntu noble-backports/main i386 Packages [33.0 kB]
+Get:55 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [40.4 kB]
+Get:56 http://archive.ubuntu.com/ubuntu noble-backports/main Translation-en [9,208 B]
+Get:57 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7,140 B]
+Get:58 http://archive.ubuntu.com/ubuntu noble-backports/main Icons (48x48) [9,530 B]
+Get:59 http://archive.ubuntu.com/ubuntu noble-backports/main Icons (64x64) [11.2 kB]
+Get:60 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [368 B]
+Get:61 http://archive.ubuntu.com/ubuntu noble-backports/universe i386 Packages [15.8 kB]
+Get:62 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [28.9 kB]
+Get:63 http://archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [17.5 kB]
+Get:64 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.0 kB]
+Get:65 http://archive.ubuntu.com/ubuntu noble-backports/universe Icons (48x48) [24.3 kB]
+Get:66 http://archive.ubuntu.com/ubuntu noble-backports/universe Icons (64x64) [33.4 kB]
+Get:67 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1,444 B]
+Get:68 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:69 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Fetched 15.7 MB in 41s (379 kB/s)                                              
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+490 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@ubuntu:/home/ubuntu# apt install git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 490 not upgraded.
+Need to get 4,780 kB/4,806 kB of archives.
+After this operation, 24.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.3 [1,100 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.3 [3,680 kB]
+Fetched 4,780 kB in 1min 30s (52.9 kB/s)                                       
+Selecting previously unselected package liberror-perl.
+(Reading database ... 212032 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17029-2_all.deb ...
+Unpacking liberror-perl (0.17029-2) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.43.0-1ubuntu7.3_all.deb ...
+Unpacking git-man (1:2.43.0-1ubuntu7.3) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.43.0-1ubuntu7.3_amd64.deb ...
+Unpacking git (1:2.43.0-1ubuntu7.3) ...
+Setting up liberror-perl (0.17029-2) ...
+Setting up git-man (1:2.43.0-1ubuntu7.3) ...
+Setting up git (1:2.43.0-1ubuntu7.3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+root@ubuntu:/home/ubuntu# git --version
+git version 2.43.0
+root@ubuntu:/home/ubuntu# apt install gh
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  gh
+0 upgraded, 1 newly installed, 0 to remove and 490 not upgraded.
+Need to get 8,836 kB of archives.
+After this operation, 45.4 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 gh amd64 2.45.0-1ubuntu0.3 [8,836 kB]
+Fetched 8,836 kB in 37s (241 kB/s)                                             
+Selecting previously unselected package gh.
+(Reading database ... 213116 files and directories currently installed.)
+Preparing to unpack .../gh_2.45.0-1ubuntu0.3_amd64.deb ...
+Unpacking gh (2.45.0-1ubuntu0.3) ...
+Setting up gh (2.45.0-1ubuntu0.3) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+root@ubuntu:/home/ubuntu# sudo apt update
+Ign:1 cdrom://Ubuntu 24.04.2 LTS _Noble Numbat_ - Release amd64 (20250215) noble InRelease
+Hit:2 cdrom://Ubuntu 24.04.2 LTS _Noble Numbat_ - Release amd64 (20250215) noble Release
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease               
+Hit:5 http://archive.ubuntu.com/ubuntu noble InRelease                         
+Hit:6 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+490 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@ubuntu:/home/ubuntu# gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 3AA6-B870
+Press Enter to open github.com in your browser... 
+touch: cannot touch '/root/snap/firefox/common/.cache/desktop-runtime-date': No such file or directory
+mkdir: cannot create directory ‘/run/user/0’: Permission denied
+Authorization required, but no authorization protocol specified
+Error: cannot open display: :0
+mkdir: cannot create directory ‘/run/user/0’: Permission denied
+Authorization required, but no authorization protocol specified
+Error: cannot open display: :0
+/usr/bin/xdg-open: 882: iceweasel: not found
+/usr/bin/xdg-open: 882: seamonkey: not found
+/usr/bin/xdg-open: 882: mozilla: not found
+/usr/bin/xdg-open: 882: epiphany: not found
+/usr/bin/xdg-open: 882: konqueror: not found
+/usr/bin/xdg-open: 882: chromium: not found
+/usr/bin/xdg-open: 882: chromium-browser: not found
+/usr/bin/xdg-open: 882: google-chrome: not found
+/usr/bin/xdg-open: 882: www-browser: not found
+/usr/bin/xdg-open: 882: links2: not found
+/usr/bin/xdg-open: 882: elinks: not found
+/usr/bin/xdg-open: 882: links: not found
+/usr/bin/xdg-open: 882: lynx: not found
+/usr/bin/xdg-open: 882: w3m: not found
+xdg-open: no method available for opening 'https://github.com/login/device'
+! Failed opening a web browser at https://github.com/login/device
+  exit status 3
+  Please try entering the URL in your browser manually
+^C
+root@ubuntu:/home/ubuntu# gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 6875-E844
+Press Enter to open github.com in your browser... 
+mkdir: cannot create directory ‘/run/user/0’: Permission denied
+Authorization required, but no authorization protocol specified
+Error: cannot open display: :0
+mkdir: cannot create directory ‘/run/user/0’: Permission denied
+Authorization required, but no authorization protocol specified
+Error: cannot open display: :0
+/usr/bin/xdg-open: 882: iceweasel: not found
+/usr/bin/xdg-open: 882: seamonkey: not found
+/usr/bin/xdg-open: 882: mozilla: not found
+/usr/bin/xdg-open: 882: epiphany: not found
+/usr/bin/xdg-open: 882: konqueror: not found
+/usr/bin/xdg-open: 882: chromium: not found
+/usr/bin/xdg-open: 882: chromium-browser: not found
+/usr/bin/xdg-open: 882: google-chrome: not found
+/usr/bin/xdg-open: 882: www-browser: not found
+/usr/bin/xdg-open: 882: links2: not found
+/usr/bin/xdg-open: 882: elinks: not found
+/usr/bin/xdg-open: 882: links: not found
+/usr/bin/xdg-open: 882: lynx: not found
+/usr/bin/xdg-open: 882: w3m: not found
+xdg-open: no method available for opening 'https://github.com/login/device'
+! Failed opening a web browser at https://github.com/login/device
+  exit status 3
+  Please try entering the URL in your browser manually
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+! Authentication credentials saved in plain text
+✓ Logged in as 70145252
+root@ubuntu:/home/ubuntu# mkdir cloud_computing
+root@ubuntu:/home/ubuntu# cd cloud_computing
+root@ubuntu:/home/ubuntu/cloud_computing# git status
+fatal: not a git repository (or any of the parent directories): .git
+root@ubuntu:/home/ubuntu/cloud_computing# git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/ubuntu/cloud_computing/.git/
+root@ubuntu:/home/ubuntu/cloud_computing# gid add .
+Command 'gid' not found, but can be installed with:
+apt install id-utils
+root@ubuntu:/home/ubuntu/cloud_computing# git add .
+root@ubuntu:/home/ubuntu/cloud_computing# git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+root@ubuntu:/home/ubuntu/cloud_computing# git commit -m
+error: switch `m' requires a value
+root@ubuntu:/home/ubuntu/cloud_computing# git commit -m "first file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@ubuntu.(none)')
+root@ubuntu:/home/ubuntu/cloud_computing# git config --global user.name "70145252"
+root@ubuntu:/home/ubuntu/cloud_computing# git config --global user.email "70145252@student.uol.edu.pk"
+root@ubuntu:/home/ubuntu/cloud_computing#  git branch -M main
+root@ubuntu:/home/ubuntu/cloud_computing# git remote add origin https://github.com/70145252/cloud_computing.git
+root@ubuntu:/home/ubuntu/cloud_computing# git branch
+root@ubuntu:/home/ubuntu/cloud_computing# git branch -m main
+root@ubuntu:/home/ubuntu/cloud_computing# git branch
+root@ubuntu:/home/ubuntu/cloud_computing# git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/70145252/cloud_computing.git'
+root@ubuntu:/home/ubuntu/cloud_computing# ls
+root@ubuntu:/home/ubuntu/cloud_computing# nano index.html
+root@ubuntu:/home/ubuntu/cloud_computing# ls
+index.html
+root@ubuntu:/home/ubuntu/cloud_computing# git branch
+root@ubuntu:/home/ubuntu/cloud_computing# git branch -m main
+root@ubuntu:/home/ubuntu/cloud_computing# git branch
+root@ubuntu:/home/ubuntu/cloud_computing# git add .
+root@ubuntu:/home/ubuntu/cloud_computing# git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   index.html
+
+root@ubuntu:/home/ubuntu/cloud_computing# git commit -m "this is first file"
+[main (root-commit) e03fcd0] this is first file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+root@ubuntu:/home/ubuntu/cloud_computing# git status
+On branch main
+nothing to commit, working tree clean
+root@ubuntu:/home/ubuntu/cloud_computing# git branch
+* main
+root@ubuntu:/home/ubuntu/cloud_computing# git remote add origin https://github.com/70145252/cloud_computing.git
+error: remote origin already exists.
+root@ubuntu:/home/ubuntu/cloud_computing# git branch -M main
+root@ubuntu:/home/ubuntu/cloud_computing# git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/70145252/cloud_computing.git'
+root@ubuntu:/home/ubuntu/cloud_computing# git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 233 bytes | 233.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/70145252/cloud_computing.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+root@ubuntu:/home/ubuntu/cloud_computing# git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1020 bytes | 340.00 KiB/s, done.
+From https://github.com/70145252/cloud_computing
+ * branch            main       -> FETCH_HEAD
+   e03fcd0..d3c5b90  main       -> origin/main
+Updating e03fcd0..d3c5b90
+Fast-forward
+ index.html | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+root@ubuntu:/home/ubuntu/cloud_computing# ls
+index.html
+root@ubuntu:/home/ubuntu/cloud_computing# git add .
+root@ubuntu:/home/ubuntu/cloud_computing# nano index.html
+root@ubuntu:/home/ubuntu/cloud_computing# git add .
+root@ubuntu:/home/ubuntu/cloud_computing# git init
+Reinitialized existing Git repository in /home/ubuntu/cloud_computing/.git/
+root@ubuntu:/home/ubuntu/cloud_computing# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+root@ubuntu:/home/ubuntu/cloud_computing# git commit -m "this is second change on this fil"
+[main bd56344] this is second change on this fil
+ 1 file changed, 2 insertions(+)
+root@ubuntu:/home/ubuntu/cloud_computing# git pull
+Already up to date.
+root@ubuntu:/home/ubuntu/cloud_computing# git push origin main
+fatal: unable to access 'https://github.com/70145252/cloud_computing.git/': Could not resolve host: github.com
+root@ubuntu:/home/ubuntu/cloud_computing# git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 406 bytes | 406.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/70145252/cloud_computing.git
+   d3c5b90..bd56344  main -> main
+root@ubuntu:/home/ubuntu/cloud_computing# apt install nginx
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  nginx-common
+Suggested packages:
+  fcgiwrap nginx-doc
+The following NEW packages will be installed:
+  nginx nginx-common
+0 upgraded, 2 newly installed, 0 to remove and 490 not upgraded.
+Need to get 564 kB of archives.
+After this operation, 1,596 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx-common all 1.24.0-2ubuntu7.5 [43.4 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nginx amd64 1.24.0-2ubuntu7.5 [520 kB]
+Fetched 564 kB in 7s (82.9 kB/s)                                               
+Preconfiguring packages ...
+Selecting previously unselected package nginx-common.
+(Reading database ... 213308 files and directories currently installed.)
+Preparing to unpack .../nginx-common_1.24.0-2ubuntu7.5_all.deb ...
+Unpacking nginx-common (1.24.0-2ubuntu7.5) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.24.0-2ubuntu7.5_amd64.deb ...
+Unpacking nginx (1.24.0-2ubuntu7.5) ...
+Setting up nginx-common (1.24.0-2ubuntu7.5) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /usr
+/lib/systemd/system/nginx.service.
+Setting up nginx (1.24.0-2ubuntu7.5) ...
+ * Upgrading binary nginx                                                [ OK ] 
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ufw (0.36.2-6) ...
+root@ubuntu:/home/ubuntu/cloud_computing# ls
+index.html
+root@ubuntu:/home/ubuntu/cloud_computing# cd
+root@ubuntu:~# cd /var/www
+root@ubuntu:/var/www# git clone https://github.com/70145252/web-final-project.git
+Cloning into 'web-final-project'...
+remote: Enumerating objects: 35, done.
+remote: Counting objects: 100% (35/35), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 35 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (35/35), 1.36 MiB | 26.00 KiB/s, done.
+Resolving deltas: 100% (11/11), done.
+root@ubuntu:/var/www# ls
+html  web-final-project
+root@ubuntu:/var/www# cd /etc/nginx/sites-enabled
+root@ubuntu:/etc/nginx/sites-enabled# ls
+default
+root@ubuntu:/etc/nginx/sites-enabled# nano default
+root@ubuntu:/etc/nginx/sites-enabled# service nginx restart
+root@ubuntu:/etc/nginx/sites-enabled# ifconfig
+Command 'ifconfig' not found, but can be installed with:
+apt install net-tools
+root@ubuntu:/etc/nginx/sites-enabled# apt install net-tools
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  net-tools
+0 upgraded, 1 newly installed, 0 to remove and 490 not upgraded.
+Need to get 204 kB of archives.
+After this operation, 811 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 net-tools amd64 2.10-0.1ubuntu4.4 [204 kB]
+Fetched 204 kB in 4s (49.3 kB/s)    
+Selecting previously unselected package net-tools.
+(Reading database ... 213355 files and directories currently installed.)
+Preparing to unpack .../net-tools_2.10-0.1ubuntu4.4_amd64.deb ...
+Unpacking net-tools (2.10-0.1ubuntu4.4) ...
+Setting up net-tools (2.10-0.1ubuntu4.4) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+root@ubuntu:/etc/nginx/sites-enabled# ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.142.130  netmask 255.255.255.0  broadcast 192.168.142.255
+        inet6 fe80::20c:29ff:fe5e:628e  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:5e:62:8e  txqueuelen 1000  (Ethernet)
+        RX packets 50004  bytes 64286133 (64.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16769  bytes 2196452 (2.1 MB)
+        TX errors 0  dropped 15 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2445  bytes 237162 (237.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2445  bytes 237162 (237.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@ubuntu:/etc/nginx/sites-enabled# 
